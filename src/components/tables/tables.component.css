@@ -1,0 +1,81 @@
+@keyframes blink {
+  0% { opacity: 0.5; }
+  50% { opacity: 1; }
+  100% { opacity: 0.5; }
+}
+
+
+.tables {
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    justify-content: center;
+    
+   }
+   
+   table {
+     border-collapse: collapse;
+     margin: 2.5px 2.5px;
+   
+   }
+   
+   table.winner-O {
+    transition: 1.5s;
+    background-color: brown;  
+  }
+  
+  table.winner-X {
+    transition: 1.5s;
+    background-color: darkblue; 
+    
+  }
+
+   td {
+     border: 2px solid #000;
+     width: 60px;
+     height: 60px;
+     text-align: center;
+     vertical-align: middle;
+     font-size: 3em;
+     font-weight: bold;
+     cursor: pointer;
+   }
+   
+   td:hover {
+     background-color: #4b83f3;
+   }
+
+   table.winner-O td:hover {
+    transition: 0.5s;
+    background-color: brown;
+  }
+
+   table.winner-X td:hover{
+    
+    background-color: darkblue;   
+  }
+
+  .x-cell{
+    color:  rgb(13, 104, 241);
+    
+  }
+
+  .o-cell {
+    color: rgb(241, 43, 13);
+  }
+
+  .joga {
+    background-color: #ffad81;
+    animation: blink 3s infinite; 
+    opacity: 0.5;
+    transition: 0.5s;
+  }
+
+  table.winner--{
+    
+    background-color: rgb(118, 118, 118);   
+  }
+
+  table.winner--:hover{
+    
+    background-color: rgb(118, 118, 118);   
+  }

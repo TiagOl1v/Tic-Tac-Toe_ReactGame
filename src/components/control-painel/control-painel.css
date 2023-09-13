@@ -1,0 +1,145 @@
+@keyframes color-change {
+  0% {
+    color:  brown;
+  }
+
+  50% {
+    color:white
+  }
+
+  100% {
+    color: crimson;
+  }
+}
+
+@keyframes color-change2 {
+  0% {
+    color: #1c0bd9;
+  }
+
+  50% {
+    color:#1308bf;
+  }
+
+  100% {
+    color: #00008c;
+  }
+}
+
+
+#control{
+    display: flex;
+    flex: start;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px 50px 20px 50px;
+    padding: 15px 20px ;
+    background-color: #1f4f97;
+    color: #81baff;
+    box-shadow: 8px 8px 15px 2px #1e1c1c;
+    width: 500px;
+    min-width: 450px;
+    border-radius: 10px;
+  }
+
+  #cima{
+    display: flex;
+    padding-top:10px ;
+  }
+
+  #cima button{
+    margin-left: 180px;
+    border-radius: 10px;
+    border-style:double;
+    background-color: black;
+    color: white;
+    width: 120px;
+    height: 40px;
+    font-size: 15px ;
+    font-family: "Fredoka", sans-serif;
+
+  }
+
+  #cima button:hover{
+    background-color: #1e1c1c;
+    box-shadow: 2px 2px 5px black;
+
+  }
+
+  #cima button:disabled{
+    opacity: 0.5;
+    cursor: not-allowed;
+
+  }
+
+#baixo{
+    display: flex;
+  padding-top:10px ;
+  }
+
+#P1{
+width: 100px;
+padding-left: 10px;
+height: 20px;
+overflow: hidden;
+}
+#P2{
+  width: 100px;
+  height: 20px;
+
+  }
+
+#gameTime{
+  padding-left: 115px;
+  text-align: center;
+  
+}
+
+dd{
+  text-align: center;
+  margin-left: 10px;
+  margin-top: 5px ;
+}
+
+#opcao{
+  border-radius: 10px;
+  border-style:double;
+  font-family: "Fredoka", sans-serif;
+  font-weight: bold;
+  font-style: italic;
+  padding-left: 10px;
+  font-size: 14px;
+}
+
+label{
+  text-align: center;
+}
+
+.pararJogo{
+background-color: red;}
+
+.winner-o{
+  font-size: 50px;
+  animation: color-change 1s infinite;
+  transition: 0.5s;
+}
+
+.winner-x{  
+  transition: 0.5s;
+  animation: color-change2 1s infinite;
+  font-size: 50px;
+  
+}
+
+#vezJogador{
+
+  font-size: 20px;
+  font-weight: bold;
+  font-style: italic;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: rgb(166, 108, 0);
+
+}
+  
+  
